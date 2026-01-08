@@ -8,18 +8,21 @@ This project analyzes subscription churn through weekly retention cohorts. The P
 ## Problem
 High early churn and poorly understood retention trends reduce revenue and hinder marketing effectiveness.
 
-## Solution
-- Performed SQL cohort analysis on `turing_data_analytics.subscriptions`.
-- Built a Google Sheets dashboard to track weekly retention, calculate churn, and visualize customer drop-off patterns.
 
-## Methodology
-1. Data exploration and cleaning.
-2. Cohort definition by subscription start week.
-3. Weekly retention calculation from Week 0 through Week 6.
-4. Visualization via heatmaps and line charts to identify trends and actionable insights.
+## Insights
 
-## Key Findings
-- Week 1 retention is a strong predictor of long-term retention.
-- Largest drop-offs occur in Week 1 (~5%) and Week 2 (~3%).
-- Retention stabilizes after Week 2, averaging ~1% drop per week.
-- High user volume does not necessarily imply lower retention.
+1. 
+Insight: Dec7 had highest count of users onboarded -  27870
+Action:  Investigate what led to this particular behavior. It could be due to effective marketing campaign, sales promotion or other reason.
+
+2. 
+Insight: Dec 21 had best retention - from 97.4% at week 1 to 93.3% at week 6
+Action: Investigate strategy used, consider replicating
+
+3. 
+Insight: Largest drop within 2 weeks - 7.7% (4.0% + 3.7%)
+Action: Find out the reason of high churn in first 2 weeks ( unmet expectations, poor onboarding, etc.)
+
+4.
+Insight: Overall retention rate improved from by 8% (from 84.6% to 92.6%) within 9 weeks				
+Positive trend gives assurance current strategy is working. Monitor further.	

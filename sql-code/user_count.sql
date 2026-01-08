@@ -8,9 +8,7 @@ cohort_data AS (
     FROM
        `turing_data_analytics.subscriptions`
   WHERE 
-    subscription_start >= '2020-11-02' /*removes a 'week' that starts on 2020-10-26 and has only 1 day - 2020-11-01*/
---AND
---   subscription_start <= '2021-01-31' /*nieko nedaro, not sure kodel idedam*/
+    subscription_start >= '2020-11-02'
 )
 
 SELECT
