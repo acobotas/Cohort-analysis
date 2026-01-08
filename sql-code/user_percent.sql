@@ -6,11 +6,9 @@ cohort_data AS (
       subscription_start,
       COALESCE(subscription_end, '2021-02-07') AS subscription_end
     FROM
-       `turing_data_analytics.subscriptions`
+       `subscriptions`
   WHERE 
-    subscription_start >= '2020-11-02' /*removes a 'week' that starts on 2020-10-26 and has only 1 day - 2020-11-01*/
---AND
---   subscription_start <= '2021-01-31' /*nieko nedaro, not sure kodel idedam*/
+    subscription_start >= '2020-11-02'
 )
 ,
 retained AS (  
